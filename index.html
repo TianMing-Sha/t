@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tianming Sha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="output.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold tracking-normal font-serif">Tianming Sha</div>
+                <div class="hidden md:flex space-x-8 text-sm font-normal font-serif">
+                    <a href="#about" class="hover:text-blue-600">About</a>
+                    <a href="#education" class="hover:text-blue-600">Education</a>
+                    <a href="#papers" class="hover:text-blue-600">Papers</a>
+                    <a href="#projects" class="hover:text-blue-600">Projects</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Basic Personal Information -->
+    <section id="about" class="pt-24 pb-16 px-6">
+        <div class="container mx-auto">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="flex flex-col md:flex-row gap-8 xl:gap-16">
+                    <div class="md:w-1/5">
+                        <img src="sha.png" alt="Profile Photo" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-4/5">
+                        <h2 class="text-3xl font-bold mb-6 tracking-normal font-serif">
+                            Tianming Sha <span class="text-gray-500 text-base">(沙天铭)</span>
+                        </h2>
+                        <p class="text-lg mb-4 font-normal leading-relaxed font-serif">
+                            I am a master student at Sun Yat-sen University, majoring in Computer Science and Technology. My research interests include Multivariate Time Series Prediction and Model Interpretability.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mt-auto h-full">
+                            <div>
+                                <h3 class="font-bold text-sm uppercase tracking-wide text-gray-700 font-serif">Contact:
+                                </h3>
+                                <p class="font-mono flex items-center gap-2">
+                                    <i class="fas fa-envelope text-gray-600"></i>
+                                    shatm@mail2.sysu.edu.cn
+                                </p>
+                                <p class="font-mono flex items-center gap-2">
+                                    <i class="fas fa-phone text-gray-600"></i>
+                                    (+86) 13302824116
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm uppercase tracking-wide text-gray-700 font-serif">Links:
+                                </h3>
+                                <p><a href="#" class="text-blue-600 flex items-center gap-2">
+                                        <i class="fab fa-linkedin"></i>LinkedIn
+                                    </a></p>
+                                <p><a href="#" class="text-blue-600 flex items-center gap-2">
+                                        <i class="fab fa-github"></i>GitHub
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Background -->
+    <section id="education" class="py-16 bg-gray-100 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Education Backgrounds</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold tracking-normal font-serif">Undergraduate in Sun Yat-sen University
+                    </h3>
+                    <p class="text-gray-600 text-sm font-serif">Sun Yat-sen University | 2023 - Present</p>
+                    <p class="mt-2">Major in Computer Science and Technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Experience -->
+    <section id="papers" class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Papers</h2>
+            <div class="grid grid-cols-1 gap-6 xl:grid-cols-2 xl:gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold">Automated NonContact Stroke Diagnosis: A Novel Multimodal Approach
+                        for Daily Application</h3>
+                    <p class="text-gray-600 italic">Authors: <span class="font-bold">Tianming Sha</span>, Haitao Wang,
+                        Hejun Wu</p>
+                    <p class="text-gray-600">Jan. 2024 - Aug. 2024 | AAAI 2025 (Under review)</p>
+                    <p class="mt-2">We present a new multimodal method for automated noncontact stroke diagnosis,
+                        overcoming limitations
+                        of previous methods. Validated on a new dataset, it outperforms known baselines, offering a
+                        promising solution
+                        for everyday medical diagnosis</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold">TimeKAN: A Transparent KAN-Based Approach for Multivariate Time
+                        Series Forecasting</h3>
+                    <p class="text-gray-600 italic">Authors: Zechuan Chen, <span class="font-bold">Tianming Sha</span>,
+                        Ziyi Tang, Keze Wang</p>
+                    <p class="text-gray-600">Aug. 2024 - Oct. 2024 | ICLR 2025 (Under review)</p>
+                    <p class="mt-2">We present a new approach TimeKAN which is an interpretable, KAN-based model for
+                        multivariate time series forecasting that uses fewer parameters and a novel multi-scale patching
+                        module to achieve state-of-the-art predictive performance</p>
+                </div>
+            </div>
+
+            <!-- Research Interests -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Research Interests</h3>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>
+                            Multivariate Time Series Prediction and Model Interpretability
+                        </li>
+                        <li>
+                            Modelbased reinforcement learning
+                        </li>
+                        <li>
+                            Multimodal Medical Diagnosis
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Experience -->
+    <section id="projects" class="py-16 bg-gray-100 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">绿慧智体：基于 LLM 的 ESG 自动报告生成/解析系统</h3>
+                        <p class="text-gray-600 mb-2">2024.04 - 至今 | 产品技术负责人</p>
+                        <p class="text-gray-600 mb-4">通过自动化生成和解读 ESG 报告，降低企业的调研与制作成本，并为 ESG 报告提供统一的评价标准。集成 PDF 解析模块、"元超脑"多智能体系统及报告定制模块，全面优化 ESG 报告制作流程。</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">LLM</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">PDF Processing</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Multi-agent System</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">诗心共鸣：中文古诗词 NLP 技术在日本汉诗领域的迁移运用</h3>
+                        <p class="text-gray-600 mb-2">2024.05 - 至今 | 技术负责人</p>
+                        <p class="text-gray-600 mb-4">基于《日本诗纪》的数字化处理，运用中国古诗词 BERT 模型实现日本汉诗的词嵌入及模糊搜索系统。搭建跨文化的诗词检索和分析开源平台。</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">NLP</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">BERT</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Digital Humanities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-6 text-center">
+            <p>Tianming Sha</p>
+            <div class="mt-4">
+                <a href="https://www.linkedin.com/in/tianming-sha-0000000000000000000000000000000000000000/" class="mx-2 hover:text-blue-400">LinkedIn</a>
+                <a href="https://github.com/tianming-sha" class="mx-2 hover:text-blue-400">GitHub</a>
+                <a href="mailto:shatm@mail2.sysu.edu.cn" class="mx-2 hover:text-blue-400">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
