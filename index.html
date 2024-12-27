@@ -1,235 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tianming Sha</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="output.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Merriweather', Georgia, 'Times New Roman', 'Microsoft YaHei', serif;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tianming Sha</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <!-- Tailwind CSS -->
+  <link href="output.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Merriweather', Georgia, 'Times New Roman', 'Microsoft YaHei', serif;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50">
-    <nav class="bg-white shadow-md fixed w-full z-10">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex items-center justify-between">
-                <div class="text-xl font-bold tracking-normal font-serif">Tianming Sha</div>
-                <div class="hidden md:flex space-x-8 text-sm font-normal font-serif">
-                    <a href="#about" class="hover:text-blue-600">About</a>
-                    <a href="#education" class="hover:text-blue-600">Education</a>
-                    <a href="#papers" class="hover:text-blue-600">Papers</a>
-                    <a href="#projects" class="hover:text-blue-600">Projects</a>
-                </div>
-            </div>
+  <!-- 导航栏 -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex items-center justify-between">
+        <div class="text-xl font-bold tracking-normal font-serif">Tianming Sha</div>
+        <div class="hidden md:flex space-x-8 text-sm font-normal font-serif">
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#education" class="hover:text-blue-600">Education</a>
+          <a href="#papers" class="hover:text-blue-600">Papers</a>
+          <a href="#projects" class="hover:text-blue-600">Projects</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Basic Personal Information -->
-    <section id="about" class="pt-24 pb-16 px-6">
-        <div class="container mx-auto">
-            <div class="bg-white rounded-lg shadow-lg p-8">
-                <div class="flex flex-col md:flex-row gap-8 xl:gap-16">
-                    <div class="md:w-1/5">
-                        <img src="sha.png" alt="Profile Photo" class="rounded-lg w-full">
-                    </div>
-                    <div class="md:w-4/5">
-                        <h2 class="text-3xl font-bold mb-6 tracking-normal font-serif">
-                            Tianming Sha <span class="text-gray-500 text-base">(沙天铭)</span>
-                        </h2>
-                        <p class="text-lg mb-4 font-normal leading-relaxed font-serif">
-                            I am currently an undergraduate at Sun Yat-sen University and a research assistant in the <a href="https://www.sysu-hcp.net/home/" class="text-blue-600">HCP Lab</a>, working under the guidance of Professors <a href="https://www.sysu-hcp.net/faculty/325.html" class="text-blue-600">Keze Wang</a> and <a href="https://cse.sysu.edu.cn/node/2554" class="text-blue-600">Hejun Wu</a>. My research experience spans medical imaging, the integration of finance and deep learning, and digital humanities. I am actively seeking collaboration on projects that bring genuine benefits to society, and I welcome opportunities to develop stable, long-term partnerships.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 mt-auto h-full">
-                            <div>
-                                <h3 class="font-bold text-sm uppercase tracking-wide text-gray-700 font-serif">Contact:
-                                </h3>
-                                <p class="font-mono flex items-center gap-2">
-                                    <i class="fas fa-envelope text-gray-600"></i>
-                                    shatm@mail2.sysu.edu.cn
-                                </p>
-                                <p class="font-mono flex items-center gap-2">
-                                    <i class="fas fa-phone text-gray-600"></i>
-                                    (+86) 13302824116
-                                </p>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-sm uppercase tracking-wide text-gray-700 font-serif">Links:
-                                </h3>
-                                <p>
-                                    <a href="https://www.linkedin.com/in/tianming-sha-166523343/" class="text-blue-600 flex items-center gap-2" target="_blank" rel="noopener noreferrer">
-                                      <i class="fab fa-linkedin"></i> LinkedIn
-                                    </a>
-                                  </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Basic Personal Information -->
+  <section id="about" class="pt-24 pb-16 px-6">
+    <div class="container mx-auto">
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <div class="flex flex-col md:flex-row gap-8 xl:gap-16">
+          <!-- 个人头像，使用 1:1 比例（aspect-square）示例 -->
+          <div class="md:w-1/5">
+            <div class="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="sha.png"
+                alt="Profile Photo"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
+          </div>
+          <div class="md:w-4/5">
+            <h2 class="text-3xl font-bold mb-6 tracking-normal font-serif">
+              Tianming Sha <span class="text-gray-500 text-base">(沙天铭)</span>
+            </h2>
+            <p class="text-lg mb-4 font-normal leading-relaxed font-serif">
+                I am currently an undergraduate at Sun Yat-sen University and a research assistant in the <a href="https://www.sysu-hcp.net/home/" class="text-blue-600">HCP Lab</a>, working under the guidance of Professors <a href="https://www.sysu-hcp.net/faculty/325.html" class="text-blue-600">Keze Wang</a> and <a href="https://cse.sysu.edu.cn/node/2554" class="text-blue-600">Hejun Wu</a>. My research experience spans medical imaging, the integration of finance and deep learning, and digital humanities. I am actively seeking collaboration on projects that bring genuine benefits to society, and I welcome opportunities to develop stable, long-term partnerships.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mt-auto h-full">
+              <div>
+                <h3
+                  class="font-bold text-sm uppercase tracking-wide text-gray-700 font-serif"
+                >
+                  Contact:
+                </h3>
+                <p class="font-mono flex items-center gap-2">
+                  <i class="fas fa-envelope text-gray-600"></i>
+                  shatm@mail2.sysu.edu.cn
+                </p>
+                <p class="font-mono flex items-center gap-2">
+                  <i class="fas fa-phone text-gray-600"></i>
+                  (+86) 13302824116
+                </p>
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-sm uppercase tracking-wide text-gray-700 font-serif"
+                >
+                  Links:
+                </h3>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/tianming-sha-166523343/"
+                    class="text-blue-600 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Education Background -->
-    <section id="education" class="py-16 bg-gray-100 px-6">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Education Backgrounds</h2>
-            <div class="space-y-6">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold tracking-normal font-serif">Undergraduate in Sun Yat-sen University
-                    </h3>
-                    <p class="text-gray-600 text-sm font-serif">Sun Yat-sen University | 2023 - Present</p>
-                    <p class="mt-2">School of Computer Science - Secret Management</p>
-                </div>
-            </div>
+  <!-- Education Background -->
+  <section id="education" class="py-16 bg-gray-100 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Education Backgrounds</h2>
+      <div class="space-y-6">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-bold tracking-normal font-serif">
+            Undergraduate in Sun Yat-sen University
+          </h3>
+          <p class="text-gray-600 text-sm font-serif">Sun Yat-sen University | 2023 - Present</p>
+          <p class="mt-2">School of Computer Science - Secret Management</p>
         </div>
-    </section>
-    <!-- Research Experience -->
-    <section id="papers" class="py-16 px-6">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Papers</h2>
-            <div class="grid grid-cols-1 gap-6 xl:grid-cols-2 xl:gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold"><a href="https://drive.google.com/file/d/15oq-krTVBC6wIFTL7aipCIT13WqyxQjd/view?usp=sharing" class="text-blue-600">Automated NonContact Stroke Diagnosis: A Novel Multimodal Approach
-                        for Daily Application</a></h3>
-                    <p class="text-gray-600 italic">Authors: <span class="font-bold">Tianming Sha</span>, Haitao Wang,
-                        Hejun Wu</p>
-                    <p class="text-gray-600">AAAI 2025 (5 , 7)(reject)</p>
-                    <p class="mt-2">We present a new multimodal method for automated noncontact stroke diagnosis,
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Experience (Papers) -->
+  <section id="papers" class="py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Papers</h2>
+
+      <!-- 第一篇论文 -->
+      <div class="grid grid-cols-1 gap-6 xl:grid-cols-2 xl:gap-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 w-full lg:w-5/6 xl:w-4/5 mx-auto h-auto">
+          <h3 class="text-xl font-semibold">
+            <a
+              href="https://drive.google.com/file/d/15oq-krTVBC6wIFTL7aipCIT13WqyxQjd/view?usp=sharing"
+              class="text-blue-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Automated NonContact Stroke Diagnosis: A Novel Multimodal Approach for Daily
+              Application
+            </a>
+          </h3>
+          <p class="text-gray-600 italic">
+            Authors:
+            <span class="font-bold">Tianming Sha</span>, Haitao Wang, Hejun Wu
+          </p>
+          <p class="text-gray-600">AAAI 2025 (5 , 7)(reject)</p>
+          <p class="mt-2">
+            We present a new multimodal method for automated noncontact stroke diagnosis,
                         overcoming limitations
                         of previous methods. Validated on a new dataset, it outperforms known baselines, offering a
                         promising solution
-                        for everyday medical diagnosis</p>
-                        <div class="flex gap-4 mt-4">
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="path2.pdf" alt="Description of Image 3" class="w-full h-78" />
-                            </div>
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="path1.pdf" alt="Description of Image 3" class="w-full h-78" />
-                            </div>
-                        </div>
-                        <div class="flex gap-4 mt-4">
-                        <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                            <img src="path3.pdf" alt="Description of Image 3" class="w-full h-78" />
-                        </div>
-                    </div>
+                        for everyday medical diagnosis.
+          </p>
 
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold"><a href="https://drive.google.com/file/d/1dwV3A1fuXBuGt3CX8UHSFY1XB1tGnXaf/view?usp=sharing" class="text-blue-600">TimeKAN: A Transparent KAN-Based Approach for Multivariate Time
-                        Series Forecasting</a></a>
-                        </h3>
-                    <p class="text-gray-600 italic">Authors: Zechuan Chen, <span class="font-bold">Tianming Sha</span>,
-                        Ziyi Tang, Keze Wang</p>
-                    <p class="text-gray-600"><a href="https://openreview.net/forum?id=9KNnSvUxLl" class="text-blue-600">ICLR 2025 (withdrawal)</a></p> 
-                    <p class="mt-2">We present a new approach TimeKAN which is an interpretable, KAN-based model for
-                        multivariate time series forecasting that uses fewer parameters and a novel multi-scale patching
-                        module to achieve state-of-the-art predictive performance</p>
-                        <div class="flex gap-4 mt-4">
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="overview.pdf" alt="Description of Image 2" class="w-full h-full" />
-                            </div>
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="patching.pdf" alt="Description of Image 3" class="w-full h-full" />
-                            </div>
-                        </div>
-                        <div class="flex gap-4 mt-4">
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="interpret.pdf" alt="Description of Image 1" class="w-full h-full" />
-                            </div>
-                        </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold"><a href="https://drive.google.com/file/d/1nLLwViSahMSSHnkiAUHJ9saAC5R3qGdp/view" class="text-blue-600">Mitigating Cache Noise in Test-Time Adaptation for Large Vision-Language Models: Series Forecasting</a>
-                        </h3>
-                    <p class="text-gray-600">ICME 2025 (submited)</p>
-                    <p class="mt-2">This study introduces a novel zero-shot test-time adaptation (TTA) method called "Cache, Residual, Gaussian" (CRG) for large vision-language models, addressing the performance degradation caused by distribution shifts in downstream tasks. The CRG method optimizes the quality of cached features through learnable residual parameters and incorporates Gaussian Discriminant Analysis (GDA) to dynamically model intra-class feature distributions, thereby mitigating the impact of noisy features. Experimental results demonstrate that CRG outperforms state-of-the-art TTA methods across 13 benchmarks, showcasing exceptional robustness and adaptability.</p>
-                        <div class="flex gap-4 mt-4">
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="ICME.jpg" alt="Description of Image 1" class="w-full h-full" />
-                            </div>
-                        </div>
-                </div>
+          <!-- 图片展示区域：统一使用 aspect-video 并开启 lazy loading -->
+          <div class="flex gap-4 mt-4">
+            <div
+              class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+            >
+              <img
+                src="path2.pdf"
+                alt="Description of Image 1"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Experience -->
-    <section id="projects" class="py-16 bg-gray-100 px-6">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2"><a href="http://47.100.20.0:3000" class="text-blue-600">Lühui Zhiti – Comprehensive Green Finance AI Model Solution</a></h3>
-                        <p class="text-gray-600 mb-2">Research Leader</p>
-                        <p class="text-gray-600 mb-4">By automatically generating and interpreting ESG reports, reduce the research and production costs for enterprises, and provide a unified evaluation standard for ESG reports. Integrate PDF parsing modules, the 'Meta Super Brain' multi-agent system, and report customization modules to comprehensively optimize the ESG report production process.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">LLM</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">PDF Processing</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Multi-agent
-                                System</span>
-                        </div>
-                        <div class="flex gap-4 mt-4">
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="lvhuizhiti.jpg" alt="Description of Image 1" class="w-full h-118" />
-                            </div>
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="lvhuizhiti2.jpg" alt="Description of Image 2" class="w-full h-118" />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2"> <a href="https://github.com/TianMing-Sha/MeiSuYing-SySu" class="text-blue-600">MeiSuYing: Transfer and Application of NLP Technologies for Chinese Classical Poetry in the Japanese Kanpo Field</a></h3>
-                        <p class="text-gray-600 mb-2">Research Leader</p>
-                        <p class="text-gray-600 mb-4">Based on the digital processing of the 'Japan Poetry Chronicle,' utilize the Chinese classical poetry BERT model to implement word embeddings and a fuzzy search system for Japanese Kanpo. Establish a cross-cultural open-source platform for poetry retrieval and analysis.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">NLP</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">BERT</span>
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Digital
-                                Humanities</span>
-                        </div>
-                        <div class="flex gap-4 mt-4">
-                            <div class="bg-white rounded-none shadow-lg overflow-hidden grow">
-                                <img src="Meiyusu2.jpg" alt="Description of Image 2" class="w-full h-58" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+            <div
+              class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+            >
+              <img
+                src="path1.pdf"
+                alt="Description of Image 2"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto px-6 text-center">
-            <p>Tianming Sha</p>
-            <div class="mt-4">
-                <a href="https://www.linkedin.com/in/tianming-sha-166523343/"
-                    class="mx-2 hover:text-blue-400">LinkedIn</a>
-                <a href="https://github.com/tianming-sha" class="mx-2 hover:text-blue-400">GitHub</a>
-                <a href="mailto:shatm@mail2.sysu.edu.cn" class="mx-2 hover:text-blue-400">Email</a>
+          </div>
+          <div class="flex gap-4 mt-4">
+            <div
+              class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+            >
+              <img
+                src="path3.pdf"
+                alt="Description of Image 3"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
+          </div>
         </div>
-    </footer>
+
+        <!-- 第二篇论文 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 w-full lg:w-5/6 xl:w-4/5 mx-auto h-auto">
+          <h3 class="text-xl font-semibold">
+            <a
+              href="https://drive.google.com/file/d/1dwV3A1fuXBuGt3CX8UHSFY1XB1tGnXaf/view?usp=sharing"
+              class="text-blue-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TimeKAN: A Transparent KAN-Based Approach for Multivariate Time Series
+              Forecasting
+            </a>
+          </h3>
+          <p class="text-gray-600 italic">
+            Authors: Zechuan Chen, <span class="font-bold">Tianming Sha</span>, Ziyi Tang,
+            Keze Wang
+          </p>
+          <p class="text-gray-600">
+            <a
+              href="https://openreview.net/forum?id=9KNnSvUxLl"
+              class="text-blue-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ICLR 2025 (withdrawal)
+            </a>
+          </p>
+          <p class="mt-2">
+            We present a new approach TimeKAN which is an interpretable, KAN-based model for
+            multivariate time series forecasting that uses fewer parameters and a novel multi-scale patching
+            module to achieve state-of-the-art predictive performance.
+          </p>
+          <!-- 图片展示区域 -->
+          <div class="flex gap-4 mt-4">
+            <div
+              class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+            >
+              <img
+                src="overview.pdf"
+                alt="Description of Image 1"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="flex gap-4 mt-4">
+            <div
+              class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+            >
+              <img
+                src="interpret.pdf"
+                alt="Description of Image 3"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- 第三篇论文 (重点示例) -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-semibold">
+            <a
+              href="https://drive.google.com/file/d/1nLLwViSahMSSHnkiAUHJ9saAC5R3qGdp/view"
+              class="text-blue-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mitigating Cache Noise in Test-Time Adaptation for Large Vision-Language
+              Models
+            </a>
+          </h3>
+          <p class="text-gray-600">ICME 2025 (submitted)</p>
+          <p class="mt-2">
+            This study introduces a novel zero-shot test-time adaptation (TTA) method called "Cache, Residual, Gaussian" (CRG) for large vision-language models, addressing the performance degradation caused by distribution shifts in downstream tasks. The CRG method optimizes the quality of cached features through learnable residual parameters and incorporates Gaussian Discriminant Analysis (GDA) to dynamically model intra-class feature distributions, thereby mitigating the impact of noisy features. Experimental results demonstrate that CRG outperforms state-of-the-art TTA methods across 13 benchmarks, showcasing exceptional robustness and adaptability.
+          </p>
+          <!-- 优化后的图片展示：设置相同比例 + lazy loading -->
+          <div class="flex gap-4 mt-4">
+            <div
+              class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+            >
+              <img
+                src="ICME.jpg"
+                alt="Description of Image 1"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <!-- 如果只有一张图片，可以去掉此容器 -->
+            <!--
+            <div
+              class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+            >
+              <img
+                src="ICME2.jpg"
+                alt="Description of Image 2"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Experience -->
+  <section id="projects" class="py-16 bg-gray-100 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- 第一个项目 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">
+              <a
+                href="http://47.100.20.0:3000"
+                class="text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lühui Zhiti – Comprehensive Green Finance AI Model Solution
+              </a>
+            </h3>
+            <p class="text-gray-600 mb-2">Research Leader</p>
+            <p class="text-gray-600 mb-4">
+                By automatically generating and interpreting ESG reports, reduce the research and production costs for enterprises, and provide a unified evaluation standard for ESG reports. Integrate PDF parsing modules, the 'Meta Super Brain' multi-agent system, and report customization modules to comprehensively optimize the ESG report production process.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                >LLM</span
+              >
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                >PDF Processing</span
+              >
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                >Multi-agent System</span
+              >
+            </div>
+            <!-- 项目图片 -->
+            <div class="flex gap-4 mt-4">
+              <div
+                class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+              >
+                <img
+                  src="lvhuizhiti.jpg"
+                  alt="Description of Image 1"
+                  class="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+              >
+                <img
+                  src="lvhuizhiti2.jpg"
+                  alt="Description of Image 2"
+                  class="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第二个项目 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">
+              <a
+                href="https://github.com/TianMing-Sha/MeiSuYing-SySu"
+                class="text-blue-600"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MeiSuYing: Transfer and Application of NLP Technologies for Chinese
+                Classical Poetry in the Japanese Kanpo Field
+              </a>
+            </h3>
+            <p class="text-gray-600 mb-2">Research Leader</p>
+            <p class="text-gray-600 mb-4">
+                Based on the digital processing of the 'Japan Poetry Chronicle,' utilize the Chinese classical poetry BERT model to implement word embeddings and a fuzzy search system for Japanese Kanpo. Establish a cross-cultural open-source platform for poetry retrieval and analysis.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                >NLP</span
+              >
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                >BERT</span
+              >
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                >Digital Humanities</span
+              >
+            </div>
+            <!-- 项目图片 -->
+            <div class="flex gap-4 mt-4">
+              <div
+                class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+              >
+                <img
+                  src="Meiyusu2.jpg"
+                  alt="Description of Image 1"
+                  class="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="relative w-full bg-white rounded-none shadow-lg overflow-hidden grow aspect-video"
+              >
+                <img
+                  src="Mei.jpg"
+                  alt="Description of Image 1"
+                  class="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-6 text-center">
+      <p>Tianming Sha</p>
+      <div class="mt-4">
+        <a
+          href="https://www.linkedin.com/in/tianming-sha-166523343/"
+          class="mx-2 hover:text-blue-400"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/tianming-sha"
+          class="mx-2 hover:text-blue-400"
+          >GitHub</a
+        >
+        <a
+          href="mailto:shatm@mail2.sysu.edu.cn"
+          class="mx-2 hover:text-blue-400"
+          >Email</a
+        >
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-
-
-Mitigating Cache Noise in Test-Time Adaptation for Large Vision-Language Models
-
-
-https://drive.google.com/file/d/1nLLwViSahMSSHnkiAUHJ9saAC5R3qGdp/view
-
-
-<a href="https://drive.google.com/file/d/1nLLwViSahMSSHnkiAUHJ9saAC5R3qGdp/view" class="text-blue-600">Mitigating Cache Noise in Test-Time Adaptation for Large Vision-Language Models:</a>
